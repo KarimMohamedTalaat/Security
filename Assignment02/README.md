@@ -4,11 +4,7 @@
 
 ## **Description of solution**
 
-## First:
- we will not change anything in the imports or the function F() which do xor operation then it's the reverse of itself
-
-## Second:
- We will start from the function encrypt and try to understand how it works 
+Starting from the function encrypt and try to understand how it works 
 
  As we see we start by  unpack the 2 byte block using "<4I" format which stands for leaving the first 4 bits as it's and forming the rest in  4 byte.
 
