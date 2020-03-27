@@ -1,9 +1,8 @@
-# Security
 
 # The solution of CTF proplem Genfei
 
 
-## **Description of solution process**
+## **Description of solution**
 
 ## First:
  we will not change anything in the imports or the function F() which do xor operation then it's the reverse of itself
