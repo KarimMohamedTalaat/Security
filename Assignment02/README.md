@@ -4,9 +4,8 @@
 
 ## **Description of solution**
 
-Starting from the function encrypt and try to understand how it works 
-
- As we see we start by  unpack the 2 byte block using "<4I" format which stands for leaving the first 4 bits as it's and forming the rest in  4 byte.
+## 1st Step:
+Starting from the function encrypt and try to understand how it works, as we see we start by unpacking the 2 byte block using "<4I" format which stands for leaving the first 4 bits as it's and forming the rest in  4 byte.
 
  Then analysing encryption stage two
  starting of `<a>, <b>, <c>, <d>` the result of second stage as we will do the reverse of encrypt down to up.
@@ -31,7 +30,7 @@ Starting from the function encrypt and try to understand how it works
  
  `c = temp ^ (F(d | F(b ^ F(a)) ^ F(d | b) ^ a))`
 
-## Third:
+## 2nd Step:
 
  Analysing encryption stage one
  assuming starting of `<a>, <b>, <c>, <d>` resultant of first stage
@@ -55,7 +54,7 @@ Starting from the function encrypt and try to understand how it works
  
  `b = temp ^ (F(a | F(c ^ F(d)) ^ F(a | c) ^ d))`
 
-## Fourth:
+## 3rd Step:
 After reversing the two stages we will do it for 32 round
 then we pach the result of `<a>, <b>, <c>, <d>` using the same format at unpacking
 
